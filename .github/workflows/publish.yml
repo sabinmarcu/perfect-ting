@@ -9,7 +9,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    name: Run Type Check & Linters
+    name: Build and Publish to GH Pages
     runs-on: ubuntu-latest
 
     steps:

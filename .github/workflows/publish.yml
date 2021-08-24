@@ -28,9 +28,13 @@ jobs:
 
       - name: Build Site
         run: yarn build
+        env:
+          NEXT_BASE_PATH: '/${{ github.event.repository.name }}'
 
       - name: Export site
         run: yarn export
+        env:
+          NEXT_BASE_PATH: '/${{ github.event.repository.name }}'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

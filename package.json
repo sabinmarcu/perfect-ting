@@ -17,7 +17,6 @@
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
-    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
     "commit": "cz"
   },
@@ -46,12 +45,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "7.0.1",
     "lint-staged": "11.1.2",
-    "prettier": "2.3.2",
     "typescript": "4.3.5"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   }
 }

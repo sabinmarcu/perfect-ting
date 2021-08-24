@@ -24,7 +24,7 @@ jobs:
           node-version: 14
 
       - name: Install dependencies (with cache)
-        uses: bahmutov/npm-install@HEAD
+        run: yarn install --immutable --immutable-cache
 
       - name: Build Site
         run: yarn build
